@@ -26,9 +26,32 @@ a {
     margin: 0 auto;
 }
 
+.btn {
+    --height: 60px;
+
+    display: inline-block;
+    height: var(--height);
+    min-width: 205px;
+    padding: 0 20px;
+    border-radius: 99px;
+    border: 1px solid #2E80CE;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: var(--height);
+    text-align: center;
+    color: #fff;
+    background-color: #2E80CE;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 /* Header */
 .header {
     min-height: 100vh;
+    padding-top: 30px;
     background-color: var(--header-bg);
 }
 
@@ -64,7 +87,6 @@ a {
     margin-left: 0.6em;
     text-align: right;
     line-height: 1.6em;
-    
 }
 
 .logo__brand {
@@ -77,4 +99,46 @@ a {
 .logo__brand--small {
     font-size: 1.2em;
     font-weight: 300;
+}
+
+/* Header-top */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.action__login,
+.navbar__link {
+    padding: 4px 21px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #C9D2DA;
+}
+
+.navbar__link:hover,
+.navbar__item--active {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__item--active::before {
+    position: relative;
+    top: -2px;
+    left: -8px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.action__signup {
+    --height: 44px;
+    min-width: 104px;
 }
