@@ -460,7 +460,7 @@ a {
     max-width: 100%;
     height: 290px;
     object-fit: cover;
-    transition: .25s;
+    transition: 0.25s;
 }
 
 .member-item__name {
@@ -496,7 +496,7 @@ a {
     outline: none;
     background-color: #fff;
     color: #575f66;
-    transition: .25s;
+    transition: 0.25s;
 }
 
 .member__control-btn:hover {
@@ -509,3 +509,46 @@ a {
 .member__control-next-icon {
     rotate: 180deg;
 }
+
+/* Install */
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    border-radius: 4px;
+    background: #2e80ce;
+}
+
+.install__img {
+    display: block;
+    margin-top: -95px;
+    width: 284px;
+    height: 520px;
+    object-fit: cover;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__row {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
+}
+
+
